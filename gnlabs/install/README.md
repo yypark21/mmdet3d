@@ -12,8 +12,7 @@ conda create -n gn python=3.7 -y
 conda activate gn
 
 # install latest PyTorch prebuilt with the default prebuilt CUDA version (usually the latest)
-conda install -c pytorch pytorch torchvision -y
-# conda install pytorch torchvision cudatoolkit=11.3 -c pytorch -c nvidia
+conda install pytorch torchvision cudatoolkit=11.1 -c pytorch -c nvidia
 
 # install mmcv
 pip install mmcv-full==1.4.0
@@ -44,14 +43,3 @@ docker build -t mmdetection3d docker/
 
 -   https://github.com/open-mmlab/mmdetection3d/issues/37
 
-# etc
-
-## Anaconda 설치 (2019 버전)
-
-```bash
-cd tmp/ #tmp 로 위치 변경하여 설치
-
-wget https://repo.anaconda.com/archive/Anaconda3-2019.10-Linux-x86_64.sh
-
-source ~/.bashrc #설치 활성화
-```
