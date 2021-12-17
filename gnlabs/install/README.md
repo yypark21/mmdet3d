@@ -11,7 +11,7 @@
 conda create -n gn python=3.7 -y
 conda activate gn
 
-# install latest PyTorch prebuilt with the default prebuilt CUDA version (usually the latest)
+# install PyTorch prebuilt with the prebuilt CUDA version
 conda install pytorch torchvision cudatoolkit=11.1 -c pytorch -c nvidia
 
 # install mmcv
