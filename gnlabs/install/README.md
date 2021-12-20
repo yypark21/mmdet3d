@@ -15,7 +15,7 @@ conda activate gn
 conda install pytorch torchvision cudatoolkit=11.1 -c pytorch -c nvidia
 
 # install mmcv
-pip install mmcv-full==1.4.0
+pip install mmcv-full==1.3.13
 
 # install mmdetection-2.19.0
 pip install git+https://github.com/open-mmlab/mmdetection.git
