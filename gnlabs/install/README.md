@@ -34,6 +34,10 @@ sudo systemctl restart docker
 ```bash
 docker build -t mmdetection3d docker/
 ```
+```bash
+apt-get update
+apt-get install wget
+```
 
 # Environment
 
