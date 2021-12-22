@@ -75,7 +75,5 @@ train(50%)  val(50%)     test
 
 # docker env
 ```bash
-cd ~/dev/gnlabs_mmdetection3d
-conda activate gn
-sudo docker run --gpus all --shm-size=8g -it -v data:/mmdetection3d/data mmdetection3d
+sudo docker run --gpus all --shm-size=8g -it -v /home/s/dev/mmdetection3d/data:/mmdetection3d/data mmdetection3d
 ```
