@@ -50,9 +50,7 @@ pip install open3d
 ## Install
 1. install docker
 2. install nvidia-container-toolkit
-3. install conda and activate env
-4. build
-
+3. build
 ```bash
 sudo docker build -t mmdetection3d docker/
 ```
