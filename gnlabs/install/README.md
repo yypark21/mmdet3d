@@ -42,7 +42,7 @@ apt-get install wget
 # Environment
 
 -   OS: Ubuntu 20.04
--   GPU: NVIDIA GeForce RTX 3080/RTX 2070 SUPER
+-   GPU: NVIDIA GeForce RTX 3080
 -   CUDA: 11.1.1
 
 # Install
@@ -75,10 +75,6 @@ pip install open3d
 pip install mmcv-full==1.4.0
 ```
 
-```bash
-docker build -t mmdetection3d docker/
-```
-
 # Bug
 
 -   https://github.com/open-mmlab/mmdetection3d/issues/37
@@ -96,5 +92,4 @@ pip install mmdet==2.19.0
 
 # install mmsegmentation
 pip install mmsegmentation==0.19.0
-
 ```
