@@ -4,7 +4,7 @@
 -   OS: Ubuntu 18.04
 -   GPU: NVIDIA GeForce RTX 2070 SUPER
 
-## install
+## Install
 1. install docker
 ```bash
 sudo apt-get update
@@ -38,14 +38,15 @@ docker build -t mmdetection3d docker/
 apt-get update
 apt-get install wget
 ```
+# Local setup
 
-# Environment
+## Environment
 
 -   OS: Ubuntu 20.04
 -   GPU: NVIDIA GeForce RTX 3080
 -   CUDA: 11.1.1
 
-# Install
+## Install
 
 ```bash
 conda create -n gn python=3.7 -y
