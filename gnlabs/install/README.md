@@ -3,7 +3,6 @@
 -   OS: Ubuntu 20.04
 -   GPU: NVIDIA GeForce RTX 3080
 -   CUDA: 11.1.1
--   Conda: Anaconda3-2021.11-Linux-x86_64
 
 # Install
 
