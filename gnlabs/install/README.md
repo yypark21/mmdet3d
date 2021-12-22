@@ -7,11 +7,12 @@
 -   CUDA: 11.1.1 / 10.1.2
 
 ## Install
+### conda
 ```bash
 conda create -n gn python=3.7 -y
 conda activate gn
 ```
-### RTX 2070
+### RTX 2070 case
 ```bash
 conda install pytorch==1.6.0 torchvision==0.7.0 cudatoolkit=10.1 -c pytorch
 sudo apt-get update && sudo apt-get install -y ffmpeg libsm6 libxext6 git ninja-build libglib2.0-0 libsm6 libxrender-dev libxext6 \
@@ -22,9 +23,9 @@ pip install mmdet==2.14.0
 pip install mmsegmentation==0.14.1
 ```
 
-### RTX 3080
+### RTX 3080 case (MVXNet model not working)
 <details>
-```bash
+```
 # install PyTorch with the CUDA version
 conda install pytorch==1.8.0 torchvision==0.9.0 cudatoolkit=11.1 -c pytorch -c nvidia
 # install mmcv
@@ -36,6 +37,7 @@ pip install mmsegmentation==0.19.0
 ```
 </details>
 
+### common
 ```bash
 # install mmdetection3d-0.17.0
 git clone https://github.com/Comverser/mmdetection3d.git
@@ -48,7 +50,7 @@ pip install pycocotools==2.0.1
 pip install open3d
 ```
 
-# Bug
+# Bug (sample per gpu setup)
 
 -   https://github.com/open-mmlab/mmdetection3d/issues/37
 
