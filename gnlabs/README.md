@@ -77,3 +77,8 @@ train(50%)  val(50%)     test
 ```bash
 sudo docker run --gpus all --shm-size=8g -it -v /home/s/dev/mmdetection3d/data:/mmdetection3d/data mmdetection3d
 ```
+```bash
+apt-get update
+apt-get install wget
+apt-get install vim
+```
