@@ -65,8 +65,6 @@ pip install mmdet==2.19.0
 # install mmsegmentation
 pip install mmsegmentation==0.19.0
 
-conda install pytorch torchvision cudatoolkit=11.1 -c pytorch -c nvidia
-
 # install mmdetection3d-0.17.0
 git clone https://github.com/Comverser/mmdetection3d.git
 cd mmdetection3d
