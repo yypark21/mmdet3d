@@ -1,7 +1,7 @@
 # Environment
 
 -   OS: Ubuntu 20.04
--   GPU: NVIDIA GeForce RTX 3080
+-   GPU: NVIDIA GeForce RTX 3080/RTX 2070 SUPER
 -   CUDA: 11.1.1
 
 # Install
@@ -17,7 +17,7 @@ conda install pytorch==1.8.0 torchvision==0.9.0 cudatoolkit=11.1 -c pytorch -c n
 pip install mmcv-full==1.3.9
 
 # install mmdetection
-pip install mmdetection==2.19.0
+pip install mmdet==2.19.0
 
 # install mmsegmentation
 pip install mmsegmentation==0.19.0
