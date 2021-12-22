@@ -76,8 +76,6 @@ pip install -v -e .
 pip install pycocotools==2.0.1
 # install visualization package
 pip install open3d
-# if there is error
-pip install mmcv-full==1.4.0
 ```
 
 # Bug
