@@ -12,16 +12,16 @@ conda create -n gn python=3.7 -y
 conda activate gn
 
 # install PyTorch(1.10.1) prebuilt with the prebuilt CUDA version
-conda install pytorch torchvision cudatoolkit=11.1 -c pytorch -c nvidia
+conda install pytorch==1.8.0 torchvision==0.9.0 cudatoolkit=11.1 -c pytorch -c nvidia
 
 # install mmcv
-pip install mmcv-full==1.4.0
+pip install mmcv-full==1.3.9
 
-# install mmdetection-2.19.0
-pip install git+https://github.com/open-mmlab/mmdetection.git
+# install mmdetection
+pip install mmdetection==2.19.0
 
-# install mmsegmentation-0.19.0
-pip install git+https://github.com/open-mmlab/mmsegmentation.git
+# install mmsegmentation
+pip install mmsegmentation==0.19.0
 
 
 # install mmdetection3d-0.17.0
