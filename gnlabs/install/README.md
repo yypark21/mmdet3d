@@ -29,10 +29,10 @@ pip install mmsegmentation==0.14.1
 
 <details>
     <summary> RTX 3080 case (MVXNet model not working) </summary>
-    conda install pytorch==1.8.0 torchvision==0.9.0 cudatoolkit=11.1 -c pytorch -c nvidia\
-    pip install mmcv-full==1.4.0\
-    pip install mmdet==2.19.0\
-    pip install mmsegmentation==0.19.0\
+    conda install pytorch==1.8.0 torchvision==0.9.0 cudatoolkit=11.1 -c pytorch -c nvidia<br/>
+    pip install mmcv-full==1.4.0<br/>
+    pip install mmdet==2.19.0<br/>
+    pip install mmsegmentation==0.19.0
 </details>
 
 ### common
