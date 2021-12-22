@@ -34,10 +34,6 @@ sudo systemctl restart docker
 ```bash
 docker build -t mmdetection3d docker/
 ```
-5. run
-```bash
-sudo docker run --gpus all --shm-size=8g -it -v {DATA_DIR}:/mmdetection3d/data mmdetection3d
-```
 
 # Environment
 
