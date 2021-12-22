@@ -63,8 +63,8 @@ pip install git+https://github.com/open-mmlab/mmdetection.git
 pip install git+https://github.com/open-mmlab/mmsegmentation.git
 
 # install mmdetection3d-0.17.0
-git clone https://github.com/Comverser/mmdetection3d-0.17.0-gnlabs.git
-cd mmdetection3d-0.17.0-gnlabs
+git clone https://github.com/Comverser/mmdetection3d.git
+cd mmdetection3d
 pip install -v -e .
 
 # compatibility error fix
