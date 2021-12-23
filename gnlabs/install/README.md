@@ -28,7 +28,7 @@ pip install mmsegmentation==0.14.1
 ```
 
 <details>
-    <summary> RTX 3080 case (MVXNet model not working) </summary>
+    <summary> RTX 3080 case (shows better performance clearly but can't train MVXNet model) </summary>
     conda install pytorch==1.8.0 torchvision==0.9.0 cudatoolkit=11.1 -c pytorch -c nvidia<br/>
     pip install mmcv-full==1.4.0<br/>
     pip install mmdet==2.19.0<br/>
