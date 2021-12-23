@@ -48,7 +48,7 @@ pip install pycocotools==2.0.1
 pip install open3d
 ```
 
-# Bug (sample per gpu setup)
+# set "samples_per_gpu" to 1
 
 -   https://github.com/open-mmlab/mmdetection3d/issues/37
 
