@@ -12,7 +12,7 @@
 conda create -n gn python=3.7 -y
 conda activate gn
 ```
-### RTX 2070 case
+### RTX 2070 case (support docker image)
 ```bash
 # install PyTorch with the CUDA version
 conda install pytorch==1.6.0 torchvision==0.7.0 cudatoolkit=10.1 -c pytorch
@@ -51,6 +51,10 @@ pip install open3d
 # set "samples_per_gpu" to 1
 
 -   https://github.com/open-mmlab/mmdetection3d/issues/37
+
+# mmdet3d/ops/spconv/src/indice_cuda.cu
+- prepareIndicePairsKernel<Index, IndexGrid, NDim, 2048>
+
 
 # Docker setup
 
