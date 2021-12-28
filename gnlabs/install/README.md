@@ -12,6 +12,19 @@
 conda create -n gn python=3.7 -y
 conda activate gn
 ```
+
+### RTX 3080 case (better performance)
+```bash
+# install PyTorch with the CUDA version
+conda install pytorch==1.8.0 torchvision==0.9.0 cudatoolkit=11.1 -c pytorch -c nvidia
+# install mmcv
+pip install mmcv-full==1.4.0
+# install mmdetection
+pip install mmdet==2.19.0
+# install mmsegmentation
+pip install mmsegmentation==0.19.0
+```
+
 ### RTX 2070 case (support docker image)
 ```bash
 # install PyTorch with the CUDA version
@@ -26,14 +39,6 @@ pip install mmdet==2.14.0
 # install mmsegmentation
 pip install mmsegmentation==0.14.1
 ```
-
-<details>
-    <summary> RTX 3080 case (shows better performance clearly but can't train MVXNet model) </summary>
-    conda install pytorch==1.8.0 torchvision==0.9.0 cudatoolkit=11.1 -c pytorch -c nvidia<br/>
-    pip install mmcv-full==1.4.0<br/>
-    pip install mmdet==2.19.0<br/>
-    pip install mmsegmentation==0.19.0
-</details>
 
 ### common
 ```bash
