@@ -8,6 +8,13 @@
 ./tools/dist_test.sh configs/second/hv_second_secfpn_6x8_80e_kitti-3d-car.py checkpoints/hv_second_secfpn_6x8_80e_kitti-3d-car_20200620_230238-393f000c.pth 2
 ```
 
+## checkpoint download
+- original
+```bash
+wget https://download.openmmlab.com/mmdetection3d/v0.1.0_models/second/hv_second_secfpn_6x8_80e_kitti-3d-3class/hv_second_secfpn_6x8_80e_kitti-3d-3class_20200620_230238-9208083a.pth -P ./checkpoints/
+```
+
+
 # MVXNet (multi gpu)
 https://github.com/open-mmlab/mmdetection3d/tree/master/configs/mvxnet
 ## train
@@ -18,6 +25,12 @@ https://github.com/open-mmlab/mmdetection3d/tree/master/configs/mvxnet
 ## test
 ```bash
 ./tools/dist_test.sh configs/mvxnet/dv_mvx-fpn_second_secfpn_adamw_2x8_80e_kitti-3d-3class.py checkpoints/dv_mvx-fpn_second_secfpn_adamw_2x8_80e_kitti-3d-3class_20200621_003904-10140f2d.pth 2
+```
+
+## checkpoint download
+- original
+```bash
+wget https://download.openmmlab.com/mmdetection3d/v0.1.0_models/mvxnet/dv_mvx-fpn_second_secfpn_adamw_2x8_80e_kitti-3d-3class/dv_mvx-fpn_second_secfpn_adamw_2x8_80e_kitti-3d-3class_20200621_003904-10140f2d.pth -P ./checkpoints/
 ```
 
 
