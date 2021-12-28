@@ -1,3 +1,25 @@
+# SECOND (multi gpu)
+## train
+```bash
+./tools/dist_train.sh configs/second/hv_second_secfpn_6x8_80e_kitti-3d-car.py checkpoints/hv_second_secfpn_6x8_80e_kitti-3d-car_20200620_230238-393f000c.pth 2
+```
+## test
+```bash
+./tools/dist_test.sh configs/second/hv_second_secfpn_6x8_80e_kitti-3d-car.py checkpoints/hv_second_secfpn_6x8_80e_kitti-3d-car_20200620_230238-393f000c.pth 2
+```
+
+# MVXNet (multi gpu)
+https://github.com/open-mmlab/mmdetection3d/tree/master/configs/mvxnet
+## train
+```bash
+./tools/dist_train.sh configs/mvxnet/dv_mvx-fpn_second_secfpn_adamw_2x8_80e_kitti-3d-3class.py --resume-from checkpoints/dv_mvx-fpn_second_secfpn_adamw_2x8_80e_kitti-3d-3class_20200621_003904-10140f2d.pth 2
+```
+
+## test
+```bash
+./tools/dist_test.sh configs/mvxnet/dv_mvx-fpn_second_secfpn_adamw_2x8_80e_kitti-3d-3class.py checkpoints/dv_mvx-fpn_second_secfpn_adamw_2x8_80e_kitti-3d-3class_20200621_003904-10140f2d.pth 2
+```
+
 
 # commands
 ## frequently used
@@ -15,6 +37,7 @@ python tools/train.py configs/second/hv_second_secfpn_6x8_80e_kitti-3d-car.py --
 ```bash
 python tools/test.py configs/second/hv_second_secfpn_6x8_80e_kitti-3d-car.py checkpoints/hv_second_secfpn_6x8_80e_kitti-3d-car_20200620_230238-393f000c.pth --show --show-dir data/kitti/show_dir/
 ```
+- mAP only
 ```bash
 python tools/test.py configs/second/hv_second_secfpn_6x8_80e_kitti-3d-car.py checkpoints/hv_second_secfpn_6x8_80e_kitti-3d-car_20200620_230238-393f000c.pth --eval mAP
 ```
