@@ -1,3 +1,9 @@
+# NCP
+```bash
+chmod go= aica_083_ftp.pem
+ssh -i aica_083.pem ubuntu@133.186.250.230
+```
+
 # SECOND (multi gpu)
 ## train
 ```bash
