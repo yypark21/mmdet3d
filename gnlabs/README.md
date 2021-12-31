@@ -1,7 +1,7 @@
 # NCP
 ```bash
 chmod go= aica_083_ftp.pem
-ssh -i aica_083.pem ubuntu@133.186.250.230
+ssh -i aica_083.pem ubuntu@address
 ```
 
 # SECOND (multi gpu)
