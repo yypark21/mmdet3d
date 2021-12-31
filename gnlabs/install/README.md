@@ -57,9 +57,6 @@ pip install open3d
 
 -   https://github.com/open-mmlab/mmdetection3d/issues/37
 
-# mmdet3d/ops/spconv/src/indice_cuda.cu
-- prepareIndicePairsKernel<Index, IndexGrid, NDim, 2048>
-
 
 # Docker setup
 
