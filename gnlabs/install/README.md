@@ -7,25 +7,16 @@
 -   CUDA: 10.1.2 / 11.1.1, respectively
 
 ## Install
+
 ### conda
+
 ```bash
 conda create -n gn python=3.7 -y
 conda activate gn
 ```
 
-### RTX 3080 case (better performance)
-```bash
-# install PyTorch with the CUDA version
-conda install pytorch==1.8.0 torchvision==0.9.0 cudatoolkit=11.1 -c pytorch -c nvidia
-# install mmcv
-pip install mmcv-full==1.4.0
-# install mmdetection
-pip install mmdet==2.19.0
-# install mmsegmentation
-pip install mmsegmentation==0.19.0
-```
-
 ### RTX 2070 case (support docker image)
+
 ```bash
 # install PyTorch with the CUDA version
 conda install pytorch==1.6.0 torchvision==0.7.0 cudatoolkit=10.1 -c pytorch
@@ -40,7 +31,25 @@ pip install mmdet==2.14.0
 pip install mmsegmentation==0.14.1
 ```
 
+### RTX 3080 case (better performance)
+
+```bash
+conda install pytorch==1.8.0 torchvision==0.9.0 cudatoolkit=11.1 -c pytorch -c nvidia
+pip install mmcv-full==1.4.0
+pip install mmdet==2.19.0
+pip install mmsegmentation==0.19.0
+```
+
+#### bug fix
+
+-   Change parameters (4096 -> 2048 ) on mmdet3d/ops/spconv/src/indice_cuda.cu
+
+```bash
+nvidia-smi -i 0,1 -pl 250
+```
+
 ### common
+
 ```bash
 # install mmdetection3d-0.17.0
 git clone https://github.com/Comverser/mmdetection3d.git
@@ -56,19 +65,3 @@ pip install open3d
 # set "samples_per_gpu" to 1
 
 -   https://github.com/open-mmlab/mmdetection3d/issues/37
-
-
-# Docker setup
-
-## Environment
--   OS: Ubuntu 18.04
--   GPU: NVIDIA GeForce RTX 2070 SUPER
--   CUDA: 11.1.1 / 10.1.2
-
-## Install
-1. install docker
-2. install nvidia-container-toolkit
-3. build
-```bash
-sudo docker build -t mmdetection3d gnlabs/
-```
