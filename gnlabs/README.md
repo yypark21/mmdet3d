@@ -99,18 +99,14 @@ pip install gdown
 
 ```bash
 rm -rf /data/kitti
-mkdir /data/tmp
-gdown https://drive.google.com/uc?id=1zoQ0IA7ZVX58S1JFx34vvlbQHXMdkaDY -O /data/tmp/kitti.zip
-unzip /data/tmp/*.zip -d /data/ && rm -rf /data/tmp
+gdown https://drive.google.com/uc?id=1zoQ0IA7ZVX58S1JFx34vvlbQHXMdkaDY -O /data/kitti.zip
 ```
 
 -   gnict sample wo 2d (overwrite)
 
 ```bash
 rm -rf /data/kitti
-mkdir /data/tmp
-gdown https://drive.google.com/uc?id=1dCTaJ754XH2S2fr-e7M9ZzHl5VvGv2py -O /data/tmp/kitti.zip
-unzip /data/tmp/*.zip -d /data/ && rm -rf /data/tmp
+gdown https://drive.google.com/uc?id=1dCTaJ754XH2S2fr-e7M9ZzHl5VvGv2py -O /data/kitti_wo_2d.zip
 ```
 
 -   kitti 3 (overwrite)
