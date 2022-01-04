@@ -95,7 +95,16 @@ pip install gdown
 
 ## download kitti dataset sample to **/data**/kitti/ directory
 
--   gnict (overwrite)
+-   gnict sample (overwrite)
+
+```bash
+rm -rf /data/kitti
+mkdir /data/tmp
+gdown https://drive.google.com/uc?id=1zoQ0IA7ZVX58S1JFx34vvlbQHXMdkaDY -O /data/tmp/kitti.zip
+unzip /data/tmp/*.zip -d /data/ && rm -rf /data/tmp
+```
+
+-   gnict sample wo 2d (overwrite)
 
 ```bash
 rm -rf /data/kitti
