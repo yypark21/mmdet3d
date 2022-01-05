@@ -27,8 +27,8 @@ python tools/test.py configs/second/hv_second_secfpn_6x8_80e_kitti-3d-car.py che
 -   increase max_epoch value for continued training on configs/\_base\_/schedules/cyclic_40e.py
 
 ```bash
-# ./tools/dist_train.sh configs/second/hv_second_secfpn_6x8_80e_kitti-3d-3class.py 8
-./tools/dist_train.sh configs/second/hv_second_secfpn_6x8_80e_kitti-3d-3class.py 8 --resume-from work_dirs/hv_second_secfpn_6x8_80e_kitti-3d-3class/latest.pth
+# ./tools/dist_train.sh configs/second/hv_second_secfpn_6x8_80e_kitti-3d-3class.py 2
+./tools/dist_train.sh configs/second/hv_second_secfpn_6x8_80e_kitti-3d-3class.py 2 --resume-from work_dirs/hv_second_secfpn_6x8_80e_kitti-3d-3class/latest.pth
 ```
 
 ### test
@@ -38,7 +38,7 @@ wget https://download.openmmlab.com/mmdetection3d/v0.1.0_models/second/hv_second
 ```
 
 ```bash
-./tools/dist_test.sh configs/second/hv_second_secfpn_6x8_80e_kitti-3d-car.py checkpoints/hv_second_secfpn_6x8_80e_kitti-3d-car_20200620_230238-393f000c.pth 8 --eval mAP
+./tools/dist_test.sh configs/second/hv_second_secfpn_6x8_80e_kitti-3d-car.py checkpoints/hv_second_secfpn_6x8_80e_kitti-3d-car_20200620_230238-393f000c.pth 2 --eval mAP
 ```
 
 ## MVXNet
@@ -48,8 +48,8 @@ wget https://download.openmmlab.com/mmdetection3d/v0.1.0_models/second/hv_second
 -   increase max_epoch value for continued training on configs/\_base\_/cosine.py
 
 ```bash
-# ./tools/dist_train.sh configs/mvxnet/dv_mvx-fpn_second_secfpn_adamw_2x8_80e_kitti-3d-3class.py 8
-./tools/dist_train.sh configs/mvxnet/dv_mvx-fpn_second_secfpn_adamw_2x8_80e_kitti-3d-3class.py 8 --resume-from work_dirs/dv_mvx-fpn_second_secfpn_adamw_2x8_80e_kitti-3d-3class/latest.pth
+# ./tools/dist_train.sh configs/mvxnet/dv_mvx-fpn_second_secfpn_adamw_2x8_80e_kitti-3d-3class.py 2
+./tools/dist_train.sh configs/mvxnet/dv_mvx-fpn_second_secfpn_adamw_2x8_80e_kitti-3d-3class.py 2 --resume-from work_dirs/dv_mvx-fpn_second_secfpn_adamw_2x8_80e_kitti-3d-3class/latest.pth
 ```
 
 ### test
@@ -59,7 +59,7 @@ wget https://download.openmmlab.com/mmdetection3d/v0.1.0_models/mvxnet/dv_mvx-fp
 ```
 
 ```bash
-./tools/dist_test.sh configs/mvxnet/dv_mvx-fpn_second_secfpn_adamw_2x8_80e_kitti-3d-3class.py checkpoints/dv_mvx-fpn_second_secfpn_adamw_2x8_80e_kitti-3d-3class_20200621_003904-10140f2d.pth 8 --eval mAP
+./tools/dist_test.sh configs/mvxnet/dv_mvx-fpn_second_secfpn_adamw_2x8_80e_kitti-3d-3class.py checkpoints/dv_mvx-fpn_second_secfpn_adamw_2x8_80e_kitti-3d-3class_20200621_003904-10140f2d.pth 2 --eval mAP
 ```
 
 # demo
