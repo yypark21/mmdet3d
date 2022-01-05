@@ -45,7 +45,7 @@ wget https://download.openmmlab.com/mmdetection3d/v0.1.0_models/second/hv_second
 
 ### train
 
--   increase max_epoch value for continued training on configs/\_base\_/cosine.py
+-   increase max_epoch value for continued training on configs/\_base\_/schedules/cosine.py
 
 ```bash
 # ./tools/dist_train.sh configs/mvxnet/dv_mvx-fpn_second_secfpn_adamw_2x8_80e_kitti-3d-3class.py 2
